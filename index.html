@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud Application</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="header--title">Crud application</div>
+            <img class="header--title--side" src="/src/icon/sidebar.svg" />
+
+            <div class="header--action">
+                <div class="header--icon">
+                    <div class="header--icon--content">
+                        <img alt="noti" src="/src/icon/notifi.svg" />
+                    </div>
+                </div>
+                <div class="header--img">
+                    <img class="header--img--content" alt="img" src="/src/icon/avata-header.png" />
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="wrapper--sidebar">
+                <div class="sidebar ">
+                    <a href="/" class="sidebar--title " id="title__dashbroad">
+                        <i class="fas fa-solid fa-square-poll-vertical  sidebar--item--icon "></i>
+                        <span class="sidebar--title--content">Bảng điều khiển</span>
+                    </a>
+                    <div class="sidebar--content">
+                        <div class="sidebar--item">
+                            <a href="/#product" class="sidebar--item--wrapper  " id="title__product">
+                                <i class="fa-solid fa-database sidebar--item--icon  "></i>
+
+                                <span class="sidebar--item--text  ">Danh sách sản
+                                    phẩm</span>
+                            </a>
+                            <a href="/#user" class="sidebar--item--wrapper" id="title__user">
+                                <i class="fa-solid fa-user-group sidebar--item--icon "></i>
+
+                                <span class="sidebar--item--text">Khách hàng</span>
+                            </a>
+                            <a href="/#addProduct" class="sidebar--item--wrapper" id="title__oder">
+                                <i class="fa-solid fa-file-lines sidebar--item--icon "></i>
+                                <span class="sidebar--item--text">Đơn hàng</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sidebar--footer">
+                        <button class="sidebar--footer--button">Thu gọn</button>
+                    </div>
+                </div>
+            </div>
+            <div id="main--page">
+                <!-- html -->
+            </div>
+        </div>
+
+    </div>
+    <div class="wrapper--loader" id="loader">
+        <div class="loading"></div>
+    </div>
+    </div>
+    <!-- Handle router, logic, error -->
+    <script type="module" src="./src/component/Hanlder/Handler.js"></script>
+    <!-- Render Dashboard -->
+    <script src="./src/component/Dashboard/chart.js"></script>
+    <script src="./src/component/Dashboard/newCustomer.js"></script>
+    <script src="./src/component/Dashboard/newOder.js"></script>
+    <script src="./src/component/Dashboard/newProduct.js"></script>
+    <!-- Render product page -->
+    <script src="./src/component/product/renderProduct.js"></script>
+    <script src="./src/Data/productApi.js"></script>
+    <!-- Crud product -->
+    <script src="/src/component/product/handleProduct.js"></script>
+    <script src="/src/component/product/paging.js"></script>
+
+
+</body>
+
+
+
+
+</html>

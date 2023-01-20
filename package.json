@@ -1,0 +1,16 @@
+{
+    "name": "crud-application",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npx json-server --watch data.json",
+        "sass": "sass -w src/scss/app.scss src/css/style.css"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "json-server": "^0.17.0",
+        "sass": "^1.54.0"
+    }
+}
